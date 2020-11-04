@@ -1,0 +1,13 @@
+--- a/composer.json
++++ b/composer.json
+@@ -46,8 +46,8 @@
+         "ext-spl": "*",
+         "ext-sqlite3": "*",
+         "fkooman/otp-verifier": "^0.3",
+-        "fkooman/sqlite-migrate": "^0",
+-        "lc/common": "v2.x-dev",
++        "fkooman/sqlite-migrate": "^0.1",
++        "lc/common": "^2",
+         "lc/openvpn-connection-manager": "^1",
+         "paragonie/constant_time_encoding": "^1|^2",
+         "php": ">=5.4",

@@ -1,0 +1,37 @@
+Source: vpn-server-api
+Section: php
+Priority: optional
+Maintainer: François Kooman <fkooman@tuxed.net>
+Build-Depends: debhelper-compat (= 12),
+ pkg-php-tools,
+ phpunit,
+ phpab,
+ dh-apache2,
+ dh-exec,
+ php-fkooman-otp-verifier,
+ php-fkooman-sqlite-migrate,
+ php-lc-openvpn-connection-manager,
+ php-lc-common,
+ php-psr-log,
+ php-sqlite3,
+ php-constant-time,
+Standards-Version: 4.5.0
+Rules-Requires-Root: binary-targets
+Homepage: https://git.tuxed.net/LC/vpn-server-api/about/
+Vcs-Git: https://git.tuxed.net/LC/vpn-server-api
+
+Package: wireguard-vpn-server-api
+Architecture: all
+Conflicts: vpn-server-api
+Provides: vpn-server-api
+Depends: ${misc:Depends},
+ ${phpcomposer:Debian-require},
+ php-cli,
+ vpn-ca,
+Recommends: ${misc:Recommends}, ${phpcomposer:Debian-recommend}
+Suggests: ${phpcomposer:Debian-suggest}
+Description: ${phpcomposer:description}
+ Server API for Let's Connect! and eduVPN managing the CA 
+ and configuration of the VPN server.
+ WireGuard Verson.
+ Conflicts with vpn-server-api.

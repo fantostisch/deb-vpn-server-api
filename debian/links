@@ -1,0 +1,2 @@
+var/lib/vpn-server-api usr/share/vpn-server-api/data
+etc/vpn-server-api usr/share/vpn-server-api/config

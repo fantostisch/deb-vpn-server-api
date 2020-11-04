@@ -1,0 +1,155 @@
+--- a/bin/disconnect-expired-certificates.php
++++ b/bin/disconnect-expired-certificates.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Common\Logger;
+--- a/bin/housekeeping.php
++++ b/bin/housekeeping.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Server\Storage;
+ 
+--- a/bin/init.php
++++ b/bin/init.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Server\CA\VpnCa;
+--- a/bin/stats.php
++++ b/bin/stats.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Common\FileIO;
+--- a/bin/status.php
++++ b/bin/status.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Common\Logger;
+--- a/bin/suggest-ip.php
++++ b/bin/suggest-ip.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,7 +8,7 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
++require_once '/usr/share/php/LC/Server/autoload.php';
+ 
+ /*
+  * Generate example IPv4 and IPv6 address ranges for VPN clients.
+--- a/bin/update-api-secrets.php
++++ b/bin/update-api-secrets.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Common\FileIO;
+--- a/bin/update-ip.php
++++ b/bin/update-ip.php
+@@ -1,3 +1,4 @@
++#!/usr/bin/php
+ <?php
+ 
+ /*
+@@ -7,8 +8,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Common\FileIO;
+--- a/web/api.php
++++ b/web/api.php
+@@ -7,8 +7,8 @@
+  * SPDX-License-Identifier: AGPL-3.0+
+  */
+ 
+-require_once dirname(__DIR__).'/vendor/autoload.php';
+-$baseDir = dirname(__DIR__);
++require_once '/usr/share/php/LC/Server/autoload.php';
++$baseDir = '/usr/share/vpn-server-api';
+ 
+ use LC\Common\Config;
+ use LC\Common\Http\BasicAuthenticationHook;

@@ -1,0 +1,77 @@
+--- a/tests/Api/CertificatesModuleTest.php
++++ b/tests/Api/CertificatesModuleTest.php
+@@ -27,7 +27,7 @@
+     /** @var \LC\Common\Http\Service */
+     private $service;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $random = new TestRandom(['random_1', 'random_2']);
+         $storage = new Storage(
+--- a/tests/Api/ConnectionsModuleTest.php
++++ b/tests/Api/ConnectionsModuleTest.php
+@@ -23,7 +23,7 @@
+     /** @var \LC\Common\Http\Service */
+     private $service;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $storage = new Storage(
+             new PDO('sqlite::memory:'),
+--- a/tests/Api/InfoModuleTest.php
++++ b/tests/Api/InfoModuleTest.php
+@@ -21,7 +21,7 @@
+     /** @var \LC\Common\Http\Service */
+     private $service;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $config = Config::fromFile(sprintf('%s/data/info_module_config.php', __DIR__));
+ 
+--- a/tests/Api/OpenVpnModuleTest.php
++++ b/tests/Api/OpenVpnModuleTest.php
+@@ -27,7 +27,7 @@
+     /** @var \LC\Common\Http\Service */
+     private $service;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $config = Config::fromFile(sprintf('%s/data/openvpn_module_config.php', __DIR__));
+         $storage = new Storage(
+--- a/tests/Api/SystemMessagesTest.php
++++ b/tests/Api/SystemMessagesTest.php
+@@ -23,7 +23,7 @@
+     /** @var \LC\Common\Http\Service */
+     private $service;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $storage = new Storage(
+             new PDO('sqlite::memory:'),
+--- a/tests/Api/UsersModuleTest.php
++++ b/tests/Api/UsersModuleTest.php
+@@ -29,7 +29,7 @@
+     /** @var \LC\Server\Storage */
+     private $storage;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $this->storage = new Storage(
+             new PDO('sqlite::memory:'),
+--- a/tests/StorageTest.php
++++ b/tests/StorageTest.php
+@@ -19,7 +19,7 @@
+     /** @var \LC\Server\Storage */
+     private $storage;
+ 
+-    public function setUp()
++    public function setUp() : void
+     {
+         $this->storage = new Storage(
+             new PDO('sqlite::memory:'),
