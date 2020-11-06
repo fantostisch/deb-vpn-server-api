@@ -1,3 +1,9 @@
+vpn-server-api (0.0.1-2) unstable; urgency=medium
+
+  * Depend on wireguard-php-lc-common, do not provide vpn-server-api
+
+ -- Nick Aquina <nickaquina@gmail.com>  Fri, 06 Nov 2020 09:48:43 +0100
+
 vpn-server-api (0.0.1-1) unstable; urgency=medium
 
   * Initial release
