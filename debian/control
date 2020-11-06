@@ -11,7 +11,7 @@ Build-Depends: debhelper-compat (= 12),
  php-fkooman-otp-verifier,
  php-fkooman-sqlite-migrate,
  php-lc-openvpn-connection-manager,
- php-lc-common,
+ wireguard-php-lc-common,
  php-psr-log,
  php-sqlite3,
  php-constant-time,
@@ -23,7 +23,6 @@ Vcs-Git: https://git.tuxed.net/LC/vpn-server-api
 Package: wireguard-vpn-server-api
 Architecture: all
 Conflicts: vpn-server-api
-Provides: vpn-server-api
 Depends: ${misc:Depends},
  ${phpcomposer:Debian-require},
  php-cli,
