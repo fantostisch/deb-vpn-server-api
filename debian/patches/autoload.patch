@@ -104,42 +104,6 @@
  
  /*
   * Generate example IPv4 and IPv6 address ranges for VPN clients.
---- a/bin/update-api-secrets.php
-+++ b/bin/update-api-secrets.php
-@@ -1,3 +1,4 @@
-+#!/usr/bin/php
- <?php
- 
- /*
-@@ -7,8 +8,8 @@
-  * SPDX-License-Identifier: AGPL-3.0+
-  */
- 
--require_once dirname(__DIR__).'/vendor/autoload.php';
--$baseDir = dirname(__DIR__);
-+require_once '/usr/share/php/LC/Server/autoload.php';
-+$baseDir = '/usr/share/vpn-server-api';
- 
- use LC\Common\Config;
- use LC\Common\FileIO;
---- a/bin/update-ip.php
-+++ b/bin/update-ip.php
-@@ -1,3 +1,4 @@
-+#!/usr/bin/php
- <?php
- 
- /*
-@@ -7,8 +8,8 @@
-  * SPDX-License-Identifier: AGPL-3.0+
-  */
- 
--require_once dirname(__DIR__).'/vendor/autoload.php';
--$baseDir = dirname(__DIR__);
-+require_once '/usr/share/php/LC/Server/autoload.php';
-+$baseDir = '/usr/share/vpn-server-api';
- 
- use LC\Common\Config;
- use LC\Common\FileIO;
 --- a/web/api.php
 +++ b/web/api.php
 @@ -7,8 +7,8 @@
