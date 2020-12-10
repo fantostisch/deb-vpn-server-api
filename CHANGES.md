@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.2.10 (...)
+- do not rewrite `config.php` files during deployment, it is a terrible idea as
+  it reformats the configuration file and removes the comments. To that end:
+  - remove `bin/update-ip.php` and keep using the default IPs
+  - remove `bin/update-api-secrets.php` and string replace them in depoy script
+  - we *do* have `bin/suggest-ip.php` if you want to randomly generate nice 
+    private IPv4 and IPv6 ranges and transplant them in your configuration file
+    manually
+- remove `tlsProtection` option support, `tls-crypt` will always be used
+
+## 2.2.9 (2020-11-27)
+- update for `ProfileConfig` refactor
+
 ## 2.2.8 (2020-10-20)
 - implement changes for updated `Config` API
 - fix `vpn-server-api-suggest-ip` on CentOS 7 (random_compat)
